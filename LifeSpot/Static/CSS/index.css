@@ -32,6 +32,10 @@ header {
     color: #44453f;
 }
 
+input:focus {
+    border: 2px solid red
+}
+
 footer {
     position: absolute;
     bottom: 0;
