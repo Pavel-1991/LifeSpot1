@@ -3,8 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>LifeSpot</title>
+    <!--Подключение стилей по относительному пути из внешнего файла-->
+    <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <p>Приветствуем на LifeSpot!</p>
+    <div class="bordered">
+        <header id="header-index">
+            <!--Заголовок страницы-->
+            <h1>LifeSpot - прямые трансляции с улиц</h1>
+            <!--Параграф-->
+            <p>Покажем, что происходит прямо сейчас</p>
+        </header>    
+        <!--Кнопки, обернутые в ссылки-->
+        <!--<a href="https://www.youtube.com/watch?v=wCcMcaiRbhM"><button>Санкт-Петербург</button></a>
+        <a href="https://www.youtube.com/watch?v=srlpC5tmhYs"><button>Нью-Йорк</button></a>
+        <a href="https://www.youtube.com/watch?v=JplMzss6_YE&ab_channel=WokiliWanders"><button>Лондон</button></a>-->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3 class="video-title">Лондон, автобусный маршрут</h3>
+        </div>
+    </div>
+    <!-- <div>
+             <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/11/ryazan/search/google/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">google в Рязани</a><a href="https://yandex.ru/maps/11/ryazan/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Рязань</a><iframe src="https://yandex.ru/map-widget/v1/?ll=39.702607%2C54.624425&mode=search&sctx=ZAAAAAgBEAAaKAoSCec4twn33kNAEWba%2FpWVUEtAEhIJDw2LUdfa1j8RZVbvcDs00j8iBgABAgMEBSgKOABAC0gBYipjb2xsZWN0aW9uc19yYW5raW5nX21vZGVsPWNvbGxlY3Rpb25zX2Rzc21qAnJ1nQHNzEw9oAEAqAEAvQHZhz6QwgFK8Of8%2FcUCrISD2ooG39%2BdtpcG5sv%2Fi%2B8B4Oy8hQX7hubYkASh8Zv9A6O9mqivBInj%2B%2BaUBaLkybJGhpap97kFq%2F%2BGzQb2i%2FCNmQPqAQDyAQD4AQCCAgZnb29nbGWKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=39.702607%2C54.624425&source=serp_navig&sspn=0.066509%2C0.021795&text=google&z=14.89" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+         </div> -->
 </body>
+<!--Футер страницы находится под основной частью (body)-->
+<footer>
+    <p>LifeSpot - все права защищены</p>
+    <p>Связаться с нами: contact@lifespot.ru</p>
+</footer>
+<!--Сайд-бар страницы-->
+<aside id="sidebar">
+    <div class="navbar">
+        <p>Все трансляции</p>
+        <p>О проекте</p>
+    </div>
+</aside>
 </html>
